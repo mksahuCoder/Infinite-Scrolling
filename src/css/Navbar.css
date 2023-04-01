@@ -1,0 +1,83 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.m-Navbar{
+    background: gray;
+    padding: 1rem 0;
+}
+
+.o-flex, .m-Nav, .laptop-view{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Logo h1{
+    font-size: 2rem;
+}
+
+.mm{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.login-btn{
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .5rem 2rem;
+}
+
+
+.mobile-menu-icon{
+    display: none;
+}
+
+
+/* media query */
+
+@media screen and (max-width:1200px) {
+    .laptop-view{
+        display: none;
+    }
+
+    .hamberger-view{
+        position: absolute;
+        display: block;
+        text-align: center;
+        background-color: #005469;
+        left: 0;
+        top: 75px;
+        transition: all 2s ease-out;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .m-Nav{
+        flex-direction: column;
+        gap: unset;
+    }
+
+    .login-btn{
+        border: none;
+        color: black;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: black;
+        background-color: gray;
+        border: none;
+        outline: none;
+        top: 15px;
+        right: 25px;
+    }
+}
+

@@ -1,0 +1,47 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.m-login{
+    background: gainsboro;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form{
+    margin: 2rem 5rem;
+    background: white;
+    color: gray;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+input{
+    width: 100%;
+    margin: 1rem 0 !important;
+    padding: 0.1rem .3rem;
+}
+
+.submit-button{
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .5rem 2rem;
+}
+
+/* media query */
+
+@media screen and (max-width:400px) {
+    .submit-button{
+        font-size: .8rem;
+        border: 1px solid black;
+        border-radius: .4rem;
+        padding: .4rem .8rem;
+    }
+}
